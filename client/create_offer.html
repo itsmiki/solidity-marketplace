@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Web3 Marketplace</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="create_offer.js"></script>
+  </head>
+
+  <body>
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">Solidity Marketplace</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Offers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/create_offer.html">Create Offer</a>
+          </li>
+        </ul>
+          <div id="account" class="me-2"></div>
+      </div>
+    </nav>
+
+      <div class="container">
+        <label for="price">Price</label>
+        <input
+          type="pric"
+          class="form-control"
+          id="price"
+          name="price"
+          placeholder="Enter price"
+        />
+        <br>
+        <label for="title">Title</label>
+        <input
+          type="title"
+          class="form-control"
+          id="title"
+          name="title"
+          placeholder="Enter title"
+        />
+        <br>
+        <label for="description">Description</label>
+        <input
+          type="description"
+          class="form-control"
+          id="description"
+          name="description"
+          placeholder="Enter description"
+        />
+        <br>
+        <label for="photo">Photo Link</label>
+        <input
+          type="photo"
+          class="form-control"
+          id="photo"
+          name="photo"
+          placeholder="Paste a link to a photo"
+        />
+      <br />
+      <button id="create-offer" class="btn btn-primary">Create Offer</button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="tickets"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
